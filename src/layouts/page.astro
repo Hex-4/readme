@@ -1,0 +1,25 @@
+---
+const { frontmatter } = Astro.props;
+import '../global.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>README // {frontmatter.title}</title>
+    
+  </head>
+  <body>
+    
+    <main>
+      <h1>{frontmatter.title}</h1>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" is:inline></script>
+
+

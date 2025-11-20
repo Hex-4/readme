@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    /* 
+    Hack Club colors
+    */
+    --color-bg: #17171d;
+    --color-text: #ffffff;
+    --color-elevated: #252429;
+    --color-secondary: #8492a6;
+
+    --color-red: #ec3750;
+    --color-orange: #ff8c37;
+    --color-yellow: #f1c40f;
+    --color-green: #33d6a6;
+    --color-cyan: #5bc0de;
+    --color-blue: #338eda;
+    --color-purple: #a633d6;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Phantom Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+main {
+    max-width: 650px;
+    margin: 5em auto;
+    padding: 2rem;
+}
+
+#nutshell-close-all {
+    background-color: var(--color-elevated);
+}
+
+a {
+    color: var(--color-red);
+    text-decoration: underline;
+    transition: all 0.3s;
+    text-underline-offset: 4px;
+}
+
+a:hover:not(.nutshell-expandable) {
+    text-decoration: wavy underline;
+}
+
+img {
+    height: auto;
+}
+
+img.breakout {
+  width: 120%; /* or whatever feels right */
+  margin-left: -10%;
+  margin-right: -10%;
+  max-width: none;
+}
+
+h1 {
+  color: var(--color-red);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 3em;
+  line-height: 1em;
+}
+
+.nutshell-bubble-overflow-close {
+  color: var(--color-text);
+}
