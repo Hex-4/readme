@@ -91,6 +91,7 @@ img.breakout {
   margin-left: -10%;
   margin-right: -10%;
   max-width: none;
+  border: none;
 }
 
 h1 {
@@ -107,8 +108,23 @@ ul {
   color: var(--color-text);
 }
 
+img {
+  object-fit: contain;
+  border: 2px solid var(--color-secondary);
+  border-radius: 20px;
+}
+
+.nutshell-bubble-overflow-embed-button > img {
+  border: none;
+}
+
+.nutshell-heading-embed > img {
+  border: none;
+}
+
 img[src*="cachet.dunkirk.sh/emojis"] {
   width: 1em;
   height: 1em;
   vertical-align: -0.1em;
+  border: none;
 }
