@@ -15,18 +15,13 @@ permissions:
   id-token: write
 
 jobs:
-  setup:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
-
-  build:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
       - name: Install, build, and upload your site
         uses: withastro/action@v5
 
